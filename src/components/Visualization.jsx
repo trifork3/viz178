@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
-import Frame from './Frame';
+import React from 'react';
 
-export default function Visualization() {
+function Canvas() {
+    
+}
 
-    const media1 = "/samoyed-A.jpg";
-    const media2 = "/samoyed-B.jpg";
+export default function Visualization({ packages }) {
 
     return (
-        <div id="component-visualization">
-            <img src={ media1 } />
-            <img src={ media2 } />
-        </div>
+        <>
+        
+        </>
     );
 }
