@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import Card from 'react-bootstrap/Card';
+import React from 'react';
+import Image from 'react-bootstrap/Image';
 import statics from '../statics';
 
-export default function Package() {
-
-    const [thumbnail, setThumbnail] = useState("/thumbnails/default.png");
-
+// [CONCEPT] media container unit; a Package visibly displays the type of media
+// it represents to users
+export default function Package({ asset, thumbnail }) {
+    
     return (
         <>
-            <Card border="primary" style={{ width: statics.thumbnail.width }}>
-                <Card.Img src={ thumbnail } />
-                <Card.ImgOverlay>
-                    <Card.Title>{ title }</Card.Title>
-                </Card.ImgOverlay>
-            </Card>
+            <Image  key={ asset } 
+                    src={ thumbnail }
+                    thumbnail="true" 
+                    height={ statics.thumbnail.height } 
+                    width={ statics.thumbnail.width }
+            />
         </>
     );
 }
