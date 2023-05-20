@@ -1,7 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Navbar from "react-bootstrap/Navbar";
 import Package from "./Package";
-import Stack from "react-bootstrap/Stack";
 import statics from "../statics";
 
 // [CONCEPT] a PackStack is a vertical navigation bar from which Packages can
@@ -20,11 +18,6 @@ export default function PackStack({ packages }) {
 
     return (
         <div id="component-packstack">
-            <Navbar bg="light" expand="lg"> 
-                <Stack gap={ statics.spacing.packStack }>
-                    { pkgs }
-                </Stack>
-            </Navbar>
         </div>
     );
 }

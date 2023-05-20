@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import Visualization from './Visualization';
 import helper from '../helper';
 import PackStack from './PackStack';
@@ -45,13 +44,6 @@ export default function App() {
 				<h1>dream.ViZ</h1>
 				<h2>Version Zero</h2>
 			</div>
-
-			<Container id="component-app-body">
-				<Row>
-					<Col><Visualization /></Col>
-					<Col><PackStack packages={ usable.current } /></Col>
-				</Row>
-			</Container>
 		</div>
 	);
 }
